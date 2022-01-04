@@ -1,0 +1,331 @@
+html {
+	overflow-x: hidden;
+}
+
+/* Corps de la page */
+body{
+	background-color:#222222;
+	font-family: 'Lato', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+/* ------------------------------- Page d'accueil ------------------------------- */
+
+/* .onglets disponible sur toutes les pages */
+.onglets :-webkit-any-link{
+	text-decoration: none;
+	color : white;
+	padding-bottom : 0.5%;
+	padding-top : 0.5%;
+	border : 2pt solid transparent;
+}
+
+/* animation onglets (Accueil, Biographie) */
+.onglets :hover:-webkit-any-link{
+	text-decoration: none;
+	color : #313131;
+	background : white;
+	padding-bottom : 0.5%;
+	padding-top : 0.5%;
+	border-radius : 10pt;
+	border : 2pt solid #222222;
+}
+
+/* Liste des sons animations */
+.liste a:-webkit-any-link{
+	text-decoration: none;
+	color : white;
+	opacity: 0.3; 
+}
+
+/* Liste des sons animations */
+.liste a:hover:-webkit-any-link{
+	text-decoration: none;
+	color : white; 
+	opacity: 1;
+}
+
+/* Barre onglet */
+.onglets{
+	background-color: #313131;
+	padding-bottom: 2%;
+	padding-top: 2%;
+	text-align: left;
+}
+
+/* Intérieurs des onglets (Accueil, Biographie) */
+.bouton{
+	padding-left: 10pt;
+	padding-right: 10pt;
+	font-size: 150%;
+	margin: 10pt;
+}
+
+/* Logos réseaux */
+.posimage{
+	width: 30 pt; 
+	height: 20pt; 
+	margin : 2pt;
+	float : right;
+}
+
+/* Logos réseaux */
+.image {
+	width: 30 pt; 
+	height: 20pt; 
+	margin : 2pt;
+	float : right;
+}
+
+/* Positionnement vidéo */
+.video{
+	position: relative;
+	left: 10%;
+	text-align: center;
+	width : 50%;
+	margin-top : 3%;
+	min-width: 80%; 
+    min-height: 80%;
+	
+}
+
+/* Positionnement vidéo */
+.clip{
+	width : 100%;
+	height : 80%;
+}
+
+/* Source du clip */
+.issue{
+	text-align: center;
+	color : #F9F9F9;
+	font-family: cursive;
+	text-decoration:underline;	
+}
+
+/* Bas de page */
+footer{
+	background-color: #1a1a1a;
+	color:#828282;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 2%;
+}
+
+/* Alignement album */
+.album {
+	font-family: 'Lato', OCR A Std, monospace;
+	text-decoration:underline;
+	text-align : center;
+	padding-bottom : 4%;
+}
+
+/*Colonnes des sons */
+.colonnes{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 10%, 5%;
+}
+
+/* ---------------------------------------------Fin page d'accueil--------------------------------------------- */
+
+
+
+
+
+
+
+/* ------------------------------------------- Début page Biographie------------------------------------------- */
+
+/* Mise en page de l'image2 et d'Histoire */
+.texteH{
+	display: inline-flex;
+	flex-direction : row;
+	margin-left : 5pt
+}
+
+/* Positionnement de l'image ronde */
+.image2{
+	width: 180pt; 
+	height: 180pt; 
+	float : right;
+	margin-top : 8%;
+}
+
+/* Positionnement et mise en page des infos de Ziak */
+.histoire{
+	position : relative; 
+	font-family : Courier New, monospace;	
+}
+
+/* Positionnement et mise en forme de la première zone texte */
+.histoire2{
+	position : relative; 
+	width :650pt;
+	padding : 40pt;
+	box-sizing : border-box;
+	border-radius : 10%;
+	font-family : Courier New, monospace;
+	margin-top : 2%;
+	color : grey;
+}
+
+/* Positionnement et mise en forme de la deuxième zone texte */
+.histoire3{
+	position : relative; 
+	width :650pt;
+	padding : 40pt;
+	font-family : Courier New, monospace;
+	margin-top : 2%;
+	color : grey;
+}
+
+/* --------------------------------------------Fin Biographie------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------Début pages musiques-------------------------------------------- */
+
+/* Positionnement image album et taille */
+.ImageAlbum{
+	position: absolute;
+	float : left;
+	margin-top : 3%;
+	width: 30%; 
+	height: 43%; 
+	margin-left : 50pt;
+}
+
+/* Positionnement titre musique et forme */
+.TitreMusique{
+	margin-left : 60%;	
+	margin-top : 3%;
+	background-color: #1a1a1a;
+	color: white ;
+	font-family: Courier, monospace;
+	padding-left: 3%;
+	padding-right: 3%;
+	font-size: 130%;
+	text-align: center;
+	border-radius : 10%;
+	text-decoration :underline;
+}
+
+/* Positionnement couplets */
+.Paroles {
+	margin-left : 20%;
+	margin-top : 15%;
+	padding-right : 48%;
+}
+
+/* Mise en couplets */
+.Paroles p{
+	padding-right : 2%;
+	color : #A7A0A0;
+	font-family: Trebuchet MS, sans-serif;
+	
+}
+
+/* Barre audio positionnement */
+.LesAudios{
+	text-align : center;
+	position : fixed;
+	z-index : 10;
+	top : 90%;
+	left : 53%;
+	width : 45%;
+}
+
+/* Transparence barre */
+.Audio2{
+	width : 100%;
+	opacity : 0.2;
+}
+
+/* Flèche pour revenir au dernier son */
+.FlèchePrécédente{
+	text-align : center;
+	position : fixed;
+	z-index : 10;
+	top : 45%;
+	left : 3%;
+	width: 45 pt; 
+	height: 40pt;
+	image-orientation: flip;
+	opacity : 60%;
+}
+
+/* Flèche pour aller au prochain son */
+.FlècheSuivante{
+	text-align : center;
+	position : fixed;
+	z-index : 10;
+	top : 45%;
+	left : 90%;
+	width: 45 pt; 
+	height: 40pt;
+	opacity : 60%;
+	
+}
+
+/* Paroles */
+.AutresCouplets{
+	font-weight: bold;
+	color : white;
+	text-decoration : underline;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
